@@ -1,96 +1,68 @@
-.fa-hand-rock,
-.fa-hand-paper,
-.fa-hand-scissors {
-  font-size: 4rem;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.modal-body ul li i {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.boards,
-.select {
-  display: none;
-}
-
-#playerSide,
-#computerSide {
-  height: 225px;
-}
-
-html, body {
-  height: 100%;
-}
-
-footer {
-  clear: both;
-  border: 1px groove #aaaaaa;
-  background: blue;
-  color: White;
+* {
+  margin: 0;
   padding: 0;
   text-align: center;
-  vertical-align: middle;
-  line-height: normal;
-  margin: 0;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-}
-.login{
-  margin-left: 1100px;
-}
-.login-container {
-  display: none; /* Initially hide the login form */
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
+ h1 {
+  background-color: #081b31;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
 }
 
-.login-form label {
-  margin-top: 10px;
-}
-
-.login-form input {
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-form button {
-  margin-top: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #28a745;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #218838;
-}
-/* body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
-} */
-/* #message {
-  margin-top: 20px;
-  font-size: 14px;
-  color: red;
-} */
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 3rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline;
+  padding: 0.8rem;
+  border-radius: 1rem;
+} 
