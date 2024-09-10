@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="search" id="search">
+    <button id="add">Add</button>
+    <script>
+        const input = document.getElementById("search");
+        const button = document.getElementById("add");
+
+        function debounce(fn, delay) {
+            let timer; // Localized timer variable
+            return function () {
+                const context = this; // Ensure correct context
+                const args = arguments; // Capture arguments
+
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    fn.apply(context, args); // Call function with preserved context
+                }, delay);
+            };
+        }
+
+        const debouncedSearch = debounce(searchData, 1000);
+
+        input.addEventListener("input", debouncedSearch); // Debounce on typing input
+
+        async function searchData() {
+            try {
+                const res = await fetch(`https://jsonplaceholder.typicode.com/comments?body=${input.value}`);
+                const data = await res.json();
+                console.log(data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>
