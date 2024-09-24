@@ -2,7 +2,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(42, 40, 40, 0.1);
     width: 400px;
     max-width: 90%;
   }
@@ -15,7 +15,7 @@
   .task-input input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #f9eeee;
     border-radius: 4px;
     margin-right: 10px;
     font-size: 16px;
@@ -23,7 +23,7 @@
   
   .task-input button {
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: #9bc1ea;
     border: none;
     color: white;
     border-radius: 4px;
@@ -32,7 +32,7 @@
   }
   
   .task-input button:hover {
-    background-color: #0056b3;
+    background-color: #6d9dd0;
   }
   
   .task-list {
@@ -63,6 +63,6 @@
   }
   
   .task-item button:hover {
-    background-color: #c82333;
+    background-color: #ce2f3f;
   }
   
